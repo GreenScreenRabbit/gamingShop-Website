@@ -1,0 +1,35 @@
+.chooseBrand-body {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: #161616;
+}
+
+.chooseBrand-itemsContainer {
+  position: relative;
+  left: 10%;
+  width: 80%;
+  height: 100%;
+  background-color: #4e4e4e;
+  text-align: center;
+}
+
+.chooseBrand-item {
+  background-color: #994c4c;
+  position: relative;
+  top: 10%;
+  height: 80%;
+  width: 20%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  display: inline-block;
+}
+
+.chooseBrand-item-img {
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=chooseBrand.css.map */

@@ -1,0 +1,156 @@
+.sNavbar {
+    &-body {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: rgb(36, 35, 35);
+        height: 80px;
+        width: 100%;
+    }
+    &-catalog {
+        text-align: center;
+        vertical-align: middle;
+        font-size: 36px;
+
+        font-weight: 400;
+        font-size: calc(12px + 24 * (100vw / 1920));
+
+        word-wrap: break-word;
+        
+        position: absolute;
+        width: 20%;
+        height: 80px;
+        top: 0px;
+        background-color: rgb(121, 24, 24);
+        &-menu {
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            height: 300px;
+            width: 100%;
+
+            background-color: rgb(36, 35, 35);
+            &-item {
+                position: relative;
+                width: 100%;
+                height: 25%;
+                box-sizing: border-box;
+                border: 4px solid silver;
+                text-align: center;
+                vertical-align: middle;
+                //background-color: rgb(36, 35, 35);
+                &-text {
+                    color: black;
+                    border-radius: 25%;
+                    opacity: 0.3;
+                    background-color: whitesmoke;
+                    position: absolute;
+                    z-index: 3;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                &-src {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    &-checkout {
+        text-align: center;
+        vertical-align: middle;
+
+        // text-overflow: ellipsis;
+        // overflow: hidden;
+
+        word-wrap: break-word;
+
+        font-size: 36px;
+        position: absolute;
+        width: 15%;
+        left: 85%;
+        height: 80px;
+        top: 0px;
+        background-color: rgb(121, 24, 24);
+        font-weight: 400;
+        font-size: calc(12px + 24 * (100vw / 1920));
+    }
+    &-containerSearchLine {
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 55%;
+        left: 25%;
+        height: auto;
+        width: 55%;
+        z-index: 1;
+    }
+    &-searchLine {
+        position: relative;
+        background-color: whitesmoke;
+        height: 70%;
+        width: 100%;
+        overflow: hidden;
+        border: 4px solid silver;
+        border-radius: 32px;
+        outline: none;
+        font-size: 36px;
+        &-dropLineContainer {
+            position: absolute;
+            width: 100%;
+            min-height: 0px;
+            max-height: 240px;
+            background-color: rgb(134, 131, 131);
+            border: 4px solid rgb(36, 35, 35);
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        &-dropLine {
+            position: relative;
+            width: 100%;
+            height: 60px;
+            background-color: rgb(114, 111, 111);
+            border: 4px solid rgb(66, 65, 65);
+            box-sizing: border-box;
+            &-img {
+                position: relative;
+                height: 100%;
+                width: 10%;
+            }
+            &-name {
+                position: absolute;
+                top: 25%;
+                left: 12%;
+                height: auto;
+                width: auto;
+            }
+            &-price {
+                // text-overflow: ellipsis;
+                // overflow: hidden;
+                position: absolute;
+                top: 25%;
+                left: 52%;
+                height: auto;
+                width: auto;
+            }
+        }
+        &-button {
+            position: absolute;
+            left: calc(100% - (48px + 4px));
+            top: 50%;
+            transform: translate(0, -50%);
+            //border-radius: 32px;
+            border-radius: 50%;
+            height: 100%;
+            //height: 48px;
+            width: 58px;
+            border: 4px solid gray;
+            background-color: tomato;
+        }
+    }
+}

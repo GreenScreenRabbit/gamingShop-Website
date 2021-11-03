@@ -1,0 +1,265 @@
+.cheackout {
+    &-body {
+        height: auto;
+        width: 100%;
+        background-color: #161616;
+    }
+    &-bodyLeft{
+        height: auto;
+        background-color: #444444;
+    }
+    &-map{
+        position: relative;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        left: 20%;
+        height: 400px;
+        width: 350px;
+        box-sizing: border-box;
+        background-color: rgb(58, 58, 58);
+        border: 4px solid slategrey;
+        
+    }
+    &-itemContainer {
+        position: relative;
+        height: 120px;
+        width: 100%;
+        background-color: rgb(40, 40, 40);
+        border: 4px solid rgb(20, 20, 20);
+        box-sizing: border-box;
+
+        &-item {
+            &-imgContainer {
+                position: absolute;
+                left: 0px;
+                width: 30%;
+                height: 100%;
+                background-color: rgb(198, 197, 199);
+                border-right: 3px solid rgb(31, 31, 31);
+                box-sizing: border-box;
+                &-img {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            &-name {
+                position: absolute;
+                left: 35%;
+                top: 0%;
+                font-size: 30px;
+            }
+            &-cancelButton {
+                position: absolute;
+                height: 48px;
+                width: 10%;
+                background-color: rgb(235, 60, 60);
+                //border-radius: 50%;
+                //left: calc(100% - 48px);
+                left: 90%;
+                &:active {
+                    background-color: rgb(250, 11, 11);
+                }
+            }
+            &-price {
+                position: absolute;
+                text-align: center;
+                vertical-align: middle;
+                top: 60%;
+                left: 60%;
+                height: 40%;
+                width: 30%;
+                font-size: 30px;
+                background-color: rgb(119, 119, 119);
+            }
+            &-purchaseСount {
+                position: absolute;
+                top: 60%;
+                left: 30%;
+                width: 30%;
+                height: 40%;
+                background-color: rgb(60, 60, 60);
+                &-minusContainer {
+                    position: absolute;
+                    text-align: center;
+                    vertical-align: middle;
+                    left: 0px;
+                    height: 100%;
+                    width: 30%;
+                    background-color: rgb(78, 78, 78);
+                    &-symbol {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 24px;
+                    }
+                }
+                &-symbolContainer {
+                    position: absolute;
+                    text-align: center;
+                    vertical-align: middle;
+                    left: 30%;
+                    height: 100%;
+                    width: 40%;
+                    background-color: rgb(58, 58, 58);
+                    &-symbol {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 24px;
+                    }
+                }
+                &-plusContainer {
+                    position: absolute;
+                    text-align: center;
+                    vertical-align: middle;
+                    left: 70%;
+                    height: 100%;
+                    width: 30%;
+                    background-color: rgb(78, 78, 78);
+                    &-symbol {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+    //&-containerPaymentType {
+    &-containerDomNode {
+        position: relative;
+        top: calc(50% - (30px / 2));
+
+        min-height: 30px;
+        max-height: 400px;
+        width: 50%;
+        left: 25%;
+        background-color: orange;
+    }
+    &-paymentType {
+        position: relative;
+        background-color: #ffffff;
+        height: 30px;
+        width: 100%;
+        border: 1px solid rgb(118, 118, 118);
+        box-sizing: border-box;
+        &-dropItem {
+            position: relative;
+            height: 60px;
+            width: 100%;
+            background-color: rgb(40, 40, 40);
+            box-sizing: border-box;
+            border: 4px solid rgb(80, 80, 80);
+            text-align: center;
+            vertical-align: middle;
+            font-size: 36px;
+        }
+        &-dropItemsContainerWithScroll {
+            position: relative;
+            z-index: 2;
+            //top: 32px;
+            height: 240px;
+            //width: 50%;
+            //left: 25%;
+            overflow-y: scroll;
+        }
+        &-dropItemsContainer {
+            position: relative;
+            z-index: 2;
+            //top: 32px;
+            //height: 240px;
+            height: auto;
+            //width: 50%;
+            width: 100%;
+            //left: 25%;
+        }
+        &-dropItemHour {
+            position: relative;
+            height: 60px;
+            width: 100%;
+            background-color: rgb(40, 40, 40);
+            box-sizing: border-box;
+            border: 4px solid rgb(80, 80, 80);
+            text-align: center;
+            vertical-align: middle;
+            font-size: 36px;
+        }
+    }
+    &-submitButton {
+        position: relative;
+        margin-top: 80px;
+        height: 80px;
+        width: 40%;
+        left: calc(50% - (40% / 2));
+        border-radius: 60px;
+        background-color: rgb(80, 80, 80);
+        border: 0;
+        &:active {
+            background-color: rgb(119, 119, 119);
+        }
+        &:disabled {
+            background-color: rgb(26, 26, 26);
+        }
+    }
+    &-totalPrice {
+        top: calc(50% - (80px / 2));
+        height: 80px;
+        font-size: 60px;
+        text-align: center;
+    }
+    &-heading {
+        height: 50px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 36px;
+        background-color: rgb(43, 43, 43);
+    }
+    &-cheackbox {
+        &-text {
+            left: 10%;
+            position: absolute;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 48px;
+        }
+        &-containerForTypeButton {
+            position: relative;
+            left: 30%;
+            height: auto;
+            width: 40%;
+            background-color: rgb(60, 60, 60);
+        }
+        &-deliveryTypeButton {
+            position: relative;
+            box-sizing: border-box;
+            left: calc(100% - 80px);
+            height: 80px;
+            width: 80px;
+            background-color: rgb(80, 80, 80);
+            border: 4px solid rgb(40, 40, 40);
+        }
+    }
+    &-containerInputText {
+        height: 100px;
+
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+    &-inputText {
+            // position: relative;
+            // top: calc(50% - (30px / 2));
+            // height: 30px;
+            // width: 50%;
+            // box-sizing: border-box;
+    }
+    &-inputTextStyle {
+        width: 100%;
+    }
+}

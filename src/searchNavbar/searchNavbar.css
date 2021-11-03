@@ -1,0 +1,161 @@
+.sNavbar-body {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #242323;
+  height: 80px;
+  width: 100%;
+}
+
+.sNavbar-catalog {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 36px;
+  font-weight: 400;
+  font-size: calc(12px + 24 * (100vw / 1920));
+  word-wrap: break-word;
+  position: absolute;
+  width: 20%;
+  height: 80px;
+  top: 0px;
+  background-color: #791818;
+}
+
+.sNavbar-catalog-menu {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  height: 300px;
+  width: 100%;
+  background-color: #242323;
+}
+
+.sNavbar-catalog-menu-item {
+  position: relative;
+  width: 100%;
+  height: 25%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 4px solid silver;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.sNavbar-catalog-menu-item-text {
+  color: black;
+  border-radius: 25%;
+  opacity: 0.3;
+  background-color: whitesmoke;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.sNavbar-catalog-menu-item-src {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.sNavbar-checkout {
+  text-align: center;
+  vertical-align: middle;
+  word-wrap: break-word;
+  font-size: 36px;
+  position: absolute;
+  width: 15%;
+  left: 85%;
+  height: 80px;
+  top: 0px;
+  background-color: #791818;
+  font-weight: 400;
+  font-size: calc(12px + 24 * (100vw / 1920));
+}
+
+.sNavbar-containerSearchLine {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 55%;
+  left: 25%;
+  height: auto;
+  width: 55%;
+  z-index: 1;
+}
+
+.sNavbar-searchLine {
+  position: relative;
+  background-color: whitesmoke;
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  border: 4px solid silver;
+  border-radius: 32px;
+  outline: none;
+  font-size: 36px;
+}
+
+.sNavbar-searchLine-dropLineContainer {
+  position: absolute;
+  width: 100%;
+  min-height: 0px;
+  max-height: 240px;
+  background-color: #868383;
+  border: 4px solid #242323;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.sNavbar-searchLine-dropLine {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: #726f6f;
+  border: 4px solid #424141;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sNavbar-searchLine-dropLine-img {
+  position: relative;
+  height: 100%;
+  width: 10%;
+}
+
+.sNavbar-searchLine-dropLine-name {
+  position: absolute;
+  top: 25%;
+  left: 12%;
+  height: auto;
+  width: auto;
+}
+
+.sNavbar-searchLine-dropLine-price {
+  position: absolute;
+  top: 25%;
+  left: 52%;
+  height: auto;
+  width: auto;
+}
+
+.sNavbar-searchLine-button {
+  position: absolute;
+  left: calc(100% - (48px + 4px));
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  border-radius: 50%;
+  height: 100%;
+  width: 58px;
+  border: 4px solid gray;
+  background-color: tomato;
+}
+/*# sourceMappingURL=searchNavbar.css.map */

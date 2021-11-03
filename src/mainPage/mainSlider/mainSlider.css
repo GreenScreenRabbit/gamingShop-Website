@@ -1,0 +1,72 @@
+.mainSlider-body {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-color: #161616;
+}
+
+.mainSlider-sliderPosition {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  top: 10%;
+}
+
+.mainSlider-sliderContainer {
+  position: relative;
+  left: 10%;
+  height: 100%;
+  width: 80%;
+}
+
+.mainSlider-leftButton {
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  left: 0px;
+  background-color: #535353;
+}
+
+.mainSlider-rightButton {
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  left: 90%;
+  background-color: #535353;
+}
+
+.mainSlider-slider {
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #222222;
+}
+
+.mainSlider-sliders-container {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainSlider-sliders-imgInLine {
+  display: block;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: auto;
+  float: left;
+}
+
+.mainSlider-sliders-img {
+  position: relative;
+  max-width: 100%;
+  min-width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=mainSlider.css.map */

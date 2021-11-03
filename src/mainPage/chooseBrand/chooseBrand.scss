@@ -1,0 +1,34 @@
+.chooseBrand {
+    &-body {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        background-color: rgb(22, 22, 22);
+    }
+    &-itemsContainer {
+        position: relative;
+        left: 10%;
+        width: 80%;
+        height: 100%;
+        background-color: rgb(78, 78, 78);
+        text-align: center;
+    }
+    &-item {
+        background-color: rgb(153, 76, 76);
+        position: relative;
+        top: 10%;
+
+        height: 80%;
+        width: 20%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        display: inline-block;
+        &-img {
+            left: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
