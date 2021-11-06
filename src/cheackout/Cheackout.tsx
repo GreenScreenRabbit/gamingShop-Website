@@ -479,7 +479,10 @@ const Cheackout = (props: PropsType) => {
 
                         <Row>
                             <Col style={{ height: "50px" }}>
-                                <div className="cheackout-totalPrice">Total price: 300 $</div>
+                                <div className="cheackout-totalPrice">Total price:{filtredDevice.reduce((sum, item) => {
+                                    return sum + item.price
+                                }, 0)} $</div>
+
                             </Col>
                         </Row>
 

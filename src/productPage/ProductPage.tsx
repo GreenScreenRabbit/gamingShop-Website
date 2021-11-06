@@ -35,6 +35,7 @@ const ProductPage = (props: PropsType) => {
 
                     <Col><div className="productPage-productTitle-text">{gamingDevice.name}</div>
                     </Col>
+                    
                 </Row>
                 <Row style={{ position: "relative" }}>
                     <Col lg={{ span: 4, offset: 1 }} style={{ backgroundColor: "#353535", height: "600px" }}>
